@@ -1,0 +1,393 @@
+/* General Styles */
+html {
+    font-family: 'Dosis', sans-serif;
+    min-height: 100vh;
+    max-width: 1280px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0px !important;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0; /* Reset padding */
+}
+
+.page-container {
+    margin-bottom: 70px;
+}
+
+/* Navigation */
+nav {
+    background-color: #e5ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 56px;
+    width: 56px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+nav .logo .title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li {
+    color: white;
+    padding: 22px 40px;
+    background-color: #c2deff;
+}
+
+nav ul li:hover {
+    background-color: #a0cdff;
+}
+
+nav ul li.active {
+    background-color: #a0cdff;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/* Responsive Dropdown */
+@media all and (max-width: 600px) {
+    /* ... (rest of the media query code) ... */
+}
+
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: url("file:///C:/Users/Nini/OneDrive/Desktop/Final%20Project/Untitled%20(7).png");
+    background-size: cover;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0.0;
+        top: -100px;
+    }
+    to {
+        opacity: 1.0;
+        top: 0.0;
+    }
+}
+
+.banner .heading {
+    flex: 1;
+    justify-self: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    animation: appear 1s ease-in-out 0s forwards;
+}
+
+.banner .heading small {
+    font-size: 24px;
+}
+
+/* Main Text and Subtext */
+.maintext {
+    font-size: 18px;
+    padding: 66px 66px 66px 66px;
+    border: 3px solid rgb(141, 210, 255);
+    margin-top: 44px;
+    margin-bottom: 44px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  
+    text-align: center;
+}
+
+.subtext {
+    display: flex;
+}
+
+.subtext div {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.subtext .red {
+    background-color: #ff6363;
+}
+
+.subtext .yellow {
+    background-color: #f0a500;
+}
+
+.subtext .green {
+    background-color: #1eb2a6;
+}
+
+/* Quote */
+.quote {
+    display: block;
+    background-color: #eeeeee;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote::before {
+    display: inline-block;
+    content: open-quote;
+    color: #bab9b9;
+    font-size: 32px;
+}
+
+.quote::after {
+    display: inline-block;
+    content: close-quote;
+    color: #bab9b9;
+    font-size: 32px;
+}
+
+/* Projects */
+h3.title {
+    font-size: 24px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid #6b6969;
+    border-bottom: 5px solid #6b6969;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex-basis: 325px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.project h4 {
+    font-size: 20px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid #6b6969;
+    border-bottom: 5px solid #6b6969;
+}
+
+.project p {
+    padding: 0px 12px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
+.project button {
+    background-color: #1eb2a6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.project button:hover {
+    background-color: #1eb274;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 8px;
+    padding: 12px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    transition: all 0.25s ease-in;
+}
+
+.gallery-item:hover {
+    transform: scale(0.95);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.gallery-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.gallery-item-3 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+.gallery-item-4 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.gallery-item-5 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.gallery-item-6 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+/* ... (previous CSS code) ... */
+
+/* Contact */
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px; /* Adjusted padding for mobile */
+    margin: 20px 0px; /* Adjusted margin for mobile */
+    border: 1px solid #ddd; /* Added border */
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container form label {
+    margin-bottom: 8px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    height: 50px;
+}
+
+input[type=submit] {
+    background-color: #1eb274;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #1eb2a6;
+}
+
+.container .map {
+    padding: 12px;
+    margin-left: 0; /* Adjusted margin for mobile */
+    margin-top: 20px; /* Added margin for mobile */
+    flex: 1;
+    border: 1px solid grey; /* Added border */
+}
+
+/* Footer */
+.footer { 
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Tablets */
+@media all and (max-width: 800px) {
+    nav {
+        justify-content: flex-start;
+    }
+    nav ul {
+        justify-content: space-between;
+    }
+}
+
+/* Phones */
+@media all and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    .container .map {
+        margin-left: 0px;
+    }
+}
