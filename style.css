@@ -20,7 +20,7 @@ body {
 
 /* Navigation */
 nav {
-    background-color: #e5ffff;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +39,7 @@ nav .logo img {
 }
 
 nav .logo .title {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 24px;
     font-weight: bold;
     padding-left: 20px;
@@ -55,21 +55,21 @@ nav ul {
 }
 
 nav ul li {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 22px 40px;
-    background-color: #c2deff;
+    background-color: hsl(0, 0%, 100%);
 }
 
 nav ul li:hover {
-    background-color: #a0cdff;
+    background-color: #fcc8fb;
 }
 
 nav ul li.active {
-    background-color: #a0cdff;
+    background-color: #fcc8fb;
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 /* Responsive Dropdown */
@@ -85,12 +85,14 @@ nav ul li a {
     align-items: center;
     height: 400px;
     width: 100%;
-    background-image: url("file:///C:/Users/Nini/OneDrive/Desktop/Final%20Project/Untitled%20(7).png");
+    background-image: url("bg.png");
     background-size: cover;
     background-color: #ffffff;
     text-align: center;
     padding: 20px;
 }
+
+
 
 
 @keyframes appear {
@@ -107,7 +109,7 @@ nav ul li a {
 .banner .heading {
     flex: 1;
     justify-self: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 3em;
     font-weight: bold;
     position: relative;
@@ -121,8 +123,7 @@ nav ul li a {
 /* Main Text and Subtext */
 .maintext {
     font-size: 18px;
-    padding: 66px 66px 66px 66px;
-    border: 3px solid rgb(141, 210, 255);
+    padding: 44px 44px 44px 44px;
     margin-top: 44px;
     margin-bottom: 44px;
 
@@ -135,26 +136,30 @@ nav ul li a {
 }
 
 .subtext {
-    display: flex;
+    display:flex;
+    flex:1;
+    
+  
 }
 
 .subtext div {
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .subtext .red {
-    background-color: #ff6363;
+    background-color: #fcc8fb;
 }
 
 .subtext .yellow {
-    background-color: #f0a500;
+    background-color: #fcc8fb;
 }
 
 .subtext .green {
-    background-color: #1eb2a6;
+    background-color: #fcc8fb;
 }
 
 /* Quote */
@@ -185,8 +190,9 @@ h3.title {
     font-size: 24px;
     padding: 12px;
     margin: 6px;
-    border-top: 5px solid #6b6969;
-    border-bottom: 5px solid #6b6969;
+    border-top: 5px solid  #fcc8fb;
+    border-bottom: 5px solid #fcc8fb;
+    text-align: center;
 }
 
 .projects {
