@@ -60,18 +60,38 @@ nav ul li {
     background-color: hsl(0, 0%, 100%);
 }
 
+
+nav ul li {
+    border-bottom: 1px solid transparent ; /* Add a transparent border initially */
+    transition: border-bottom 0.3s; /* Add a transition for smooth hover effect */
+    background-color: rgb(255, 255, 255);
+
+}
+
+nav ul li:hover {
+    border-bottom: 4px solid rgb(249, 226, 231); /* Change the border color on hover */
+    
+}
+
+
+
+/*
 nav ul li:hover {
     background-color: #fcc8fb;
 }
+*/
 
 nav ul li.active {
-    background-color: #fcc8fb;
+    background-color: rgb(255, 255, 255);;
+    border-bottom: 4px solid rgb(249, 226, 231); /* Change the border color on hover */
+
 }
 
 nav ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
 /* Responsive Dropdown */
 @media all and (max-width: 600px) {
     /* ... (rest of the media query code) ... */
@@ -85,7 +105,7 @@ nav ul li a {
     align-items: center;
     height: 400px;
     width: 100%;
-    background-image: url("bg.png");
+    background-image: url("bur.png");
     background-size: cover;
     background-color: #ffffff;
     text-align: center;
@@ -110,6 +130,7 @@ nav ul li a {
     flex: 1;
     justify-self: center;
     color: rgb(0, 0, 0);
+    background-color: white;
     font-size: 3em;
     font-weight: bold;
     position: relative;
@@ -151,15 +172,15 @@ nav ul li a {
 }
 
 .subtext .red {
-    background-color: #fcc8fb;
+    background-color: #eeeeee;
 }
 
 .subtext .yellow {
-    background-color: #fcc8fb;
+    background-color: #eeeeee;
 }
 
 .subtext .green {
-    background-color: #fcc8fb;
+    background-color: #eeeeee;
 }
 
 /* Quote */
@@ -189,9 +210,11 @@ nav ul li a {
 h3.title {
     font-size: 24px;
     padding: 12px;
+    padding-top: 4%;
     margin: 6px;
-    border-bottom: 5px solid #fcc8fb;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
     text-align: center;
+    
 }
 
 .projects {
@@ -206,7 +229,7 @@ h3.title {
     box-sizing: border-box;
     padding: 20px;
     margin: 20px;
-    border: 2px solid #fcc8fb;
+    border: 2px solid rgb(244 227 231);;
     border-radius: 10px;
 }
 
@@ -214,8 +237,8 @@ h3.title {
     font-size: 20px;
     padding: 12px;
     margin: 6px;
-    border-top: 5px solid #fcc8fb;
-    border-bottom: 5px solid #fcc8fb;
+    border-top: 5px solid rgb(244 227 231);;
+    border-bottom: 5px solid rgb(244 227 231);;
 }
 
 .project p {
@@ -234,8 +257,8 @@ h3.title {
 }
 
 .project button {
-    background-color: #fcc8fb;
-    color: white;
+    background-color: rgb(244 227 231);;
+    color: rgb(0, 0, 0);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -244,7 +267,7 @@ h3.title {
 }
 
 .project button:hover {
-    background-color: #000000;
+    background-color: #979797;
 }
 
 /* Gallery */
@@ -312,7 +335,7 @@ h3.title {
     background-color: #ffffff;
     padding: 20px; /* Adjusted padding for mobile */
     margin: 20px 0px; /* Adjusted margin for mobile */
-    border: 1px solid #fcc8fb; /* Added border */
+    border: 1px solid rgb(244 227 231);; /* Added border */
 }
 
 .container form {
@@ -329,7 +352,7 @@ h3.title {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid rgb(255, 202, 255);
+    border: 1px solid rgb(244 227 231);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -346,7 +369,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #fcc8fb;
+    background-color: rgb(244 227 231);;
 }
 
 .container .map {
@@ -354,7 +377,7 @@ input[type=submit]:hover {
     margin-left: 0; /* Adjusted margin for mobile */
     margin-top: 20px; /* Added margin for mobile */
     flex: 1;
-    border: 1px solid #fcc8fb; /* Added border */
+    border: 1px solid rgb(244 227 231);; /* Added border */
 }
 
 /* Footer */
@@ -363,8 +386,8 @@ input[type=submit]:hover {
     left: 0;
     right: 0;
     bottom: 1;
-    background-color: #fcc8fb;
-    color: white;
+    background-color: rgb(244 227 231);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 24px;
 }
@@ -377,6 +400,7 @@ input[type=submit]:hover {
     nav ul {
         justify-content: space-between;
     }
+
 }
 
 /* Phones */
@@ -399,7 +423,7 @@ input[type=submit]:hover {
 }
 
 /*about*/
-
 .about {
-    padding: 44px 44px
+    padding: 44px 44px;
+    text-align: center;
 }
